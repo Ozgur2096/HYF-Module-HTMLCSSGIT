@@ -1,0 +1,254 @@
+/* General and default */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:'dosis', 'roboto', sans-serif;
+  color: #D1FADE;
+  line-height: 2rem;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #D1FADE;
+  transition-property: color;
+  transition-duration: 1s;
+}
+a:hover {
+  color: #8C302A;
+  
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.experience {
+  display: flex;
+  margin-bottom: 60px;
+}
+.heading {
+  align-self: flex-start;
+  margin:60px 10px;
+  padding: 10px;
+}
+/* UTILITIES */
+/* background-colors */
+.bg-dark {
+  background-color: #8C302A;
+
+}
+.bg-light{
+  background-color: #fff;
+}
+.bg-primary {
+  background-color: #e6d0cf;
+}
+/* text-color */
+.tc-dark {
+  color: #8C302A;
+}
+.tc-light{
+  color: #D1FADE;
+}
+.tc-primary {
+  color: #e6d0cf; 
+}
+.tc-secondary {
+  color: #FFBF00;
+}
+/* font-size */
+.fb {
+  font-size: xx-large;
+}
+.fm {
+  font-size: x-large;
+}
+.fs {
+  font-size: larger;
+}
+  
+/* buttons */
+.btn-dark {
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: #8C302A;;
+  color: #D1FADE;
+  transition-property: background-color, color;
+  transition-duration: 1s; 
+}
+.btn-dark:hover {
+  background-color: #D1FADE;
+  color: #8C302A;
+  border: #8C302A 1px solid;
+}
+
+.btn-light {
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin: 10px;
+  background-color:#D1FADE ;
+  color: #8C302A;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+}
+.btn-light:hover {
+  background-color: #8C302A;
+  color: #D1FADE;
+  border: #D1FADE 1px solid;
+}
+
+
+/* INTRO */
+#intro {
+  background: url(./images/champignon.png) no-repeat center center/cover;
+  
+}
+#intro .container {
+  height: 100vh;
+  display: flex; 
+  flex-direction: column;
+}
+
+/* intro-1 */
+#intro .intro-1 {
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+#intro .intro-1 .foto-name {
+display: flex;
+align-items: center;
+}
+#intro .intro-1 .foto-name img {
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+/*  intro-1 --- navbar */
+#intro .intro-1 .navbar ul {
+  display: flex;
+}
+#intro .intro-1 .navbar ul li a {
+  margin: 5px .7rem;
+  padding: .5rem;  
+}
+#intro .intro-1 .navbar ul li a:hover {
+  border: #D1FADE solid 2px;
+  font-weight: 900;
+}
+
+/* intro-2 */
+#intro .intro-2 {
+  height: 70vh;
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#intro .intro-2 .social-media a{
+  margin: 0 10px;
+}
+#intro .intro-2 p{
+  padding: 10px;
+  background-color: #8C302A;
+  opacity: .7;
+  border-radius: 0 0 0 50px;
+  font-size: 1.2em;
+  text-align: right;
+}
+
+/* WORK */
+#work .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#work .experience ul li{
+  color: #8C302A;
+  margin: 25px;
+}
+#work a {
+  margin-bottom: 50px;
+}
+
+/* EDUCATION */
+#education .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#education .experience ul li{
+  margin: 25px;
+}
+#education a {
+  margin-bottom: 50px;
+}
+
+/* CONTACT */
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+#contact form {
+  max-width: 500px;
+  margin: 40px auto;
+  
+}
+#contact form input, textarea {
+  padding: 10px;
+  width: 100%;
+}
+#contact a {
+  margin-bottom: 50px;
+}
+
+/* FOOTER */
+footer .container {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  margin-left:10px;
+  padding-top: 5px;
+}
+footer a {
+  margin: 0 10px;
+}
+
+
+/* media query */
+
+@media(max-width: 700px) {
+  /* intro-1 navbar */
+  #intro .intro-1 .navbar ul {
+    flex-direction: column;
+  }
+
+  /* footer */
+  footer .container {
+    flex-direction: column;
+  }
+}
+  
