@@ -1,7 +1,7 @@
 1. attrib +h notes.txt
    attrib -h notes.txt
-   ls -a
-   ls -f
+   ls -a (to see all folders and files) 
+   
 
 2. mkdir -p these/folders/are/just/for/fun
 
