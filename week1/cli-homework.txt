@@ -1,4 +1,5 @@
-1. attrib +h notes.txt
+1. touch notes.txt
+   attrib +h notes.txt
    attrib -h notes.txt
    ls -a (to see all folders and files) 
    
